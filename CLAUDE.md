@@ -145,3 +145,35 @@ Key plugins used:
 - `ktor` - For server application
 - `jetbrains.kotlin.serialization` - For JSON serialization
 - `ksp` + `room` - For database (Room) if needed
+
+## Quality Assurance Commands
+
+### Before Each Commit
+```bash
+# Clean build to ensure no compilation issues
+./gradlew clean build
+
+# Run all tests
+./gradlew test
+
+# Verify Android-specific build
+./gradlew :composeApp:assembleDebug
+
+# Check for any linting issues (when configured)
+./gradlew detekt  # If using Detekt
+```
+
+### Before Each Phase Completion
+```bash
+# Full integration test
+./gradlew clean build test
+
+# Performance check (when profiling tools are set up)
+./gradlew :server:run &  # Start server
+# Run performance tests
+
+# Security check (when security plugins are configured)
+./gradlew dependencyCheckAnalyze
+```
+
+Remember: This project is not just about building an app—it's about demonstrating mastery of modern software engineering practices and professional communication skills.
