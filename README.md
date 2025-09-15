@@ -32,10 +32,10 @@ This project is a complete **anime/manga tracking application** built with **Kot
                      │
     ┌────────────────┼────────────────┐
     │                │                │
-┌───▼───┐    ┌───────▼────┐    ┌─────▼─────┐
+┌───▼───┐    ┌───────▼────┐    ┌─────▼────────┐
 │Content│    │User Service│    │Recommendation│
-│Service│    │            │    │   Engine     │
-└───┬───┘    └───────┬────┘    └─────┬─────┘
+│Service│    │            │    │    Engine    │
+└───┬───┘    └───────┬────┘    └──────┬───────┘
     │                │                │
     └────────────────┼────────────────┘
                      │
