@@ -32,10 +32,10 @@ This project is a complete **anime/manga tracking application** built with **Kot
                      │
     ┌────────────────┼────────────────┐
     │                │                │
-┌───▼───┐    ┌───────▼────┐    ┌─────▼─────┐
+┌───▼───┐    ┌───────▼────┐    ┌─────▼────────┐
 │Content│    │User Service│    │Recommendation│
-│Service│    │            │    │   Engine     │
-└───┬───┘    └───────┬────┘    └─────┬─────┘
+│Service│    │            │    │    Engine    │
+└───┬───┘    └───────┬────┘    └─────┬────────┘
     │                │                │
     └────────────────┼────────────────┘
                      │
@@ -185,7 +185,6 @@ This project serves as a practical implementation of modern software architectur
 ### **Phase 1: Foundation (Current)**
 - [x] Project setup with Kotlin Multiplatform
 - [x] Basic Ktor server with AniList API integration
-- [ ] User authentication and profile management
 - [ ] Anime/Manga browsing and search
 
 ### **Phase 2: Core Features**
@@ -195,6 +194,7 @@ This project serves as a practical implementation of modern software architectur
 - [ ] Offline-first architecture
 
 ### **Phase 3: Advanced Features**
+- [ ] User authentication and profile management
 - [ ] Social features (friends, activity feeds)
 - [ ] Advanced recommendation algorithms
 - [ ] Real-time notifications
